@@ -1,0 +1,93 @@
+* {margin: 0px; padding:  0px;}
+
+#top{
+	background: #555;
+	padding: 40px 0px 30px 0px;
+	border-bottom: 1px solid #444;
+}
+
+h1 {
+	font-family: "Myriad Pro", helvetica;
+	text-align: center;
+	font-size: 2em;
+	color: #333;
+	line-height: 30px;
+	text-shadow: #676868 1px 1px 1px;
+}
+
+h2 {
+	text-align: center;
+	color: #999;
+	font-weight: normal;
+	font-family: "Myriad Pro", helvetica;
+	font-size: 1.3em;
+
+}
+
+a {
+	color: #777;
+}
+
+#content {
+	background: url(grad.png) repeat-x;
+	width: 100%;
+	height: 400px;
+}
+
+#nav {
+      background: url(nav.png);
+      height: 38px;
+      width: 876px;
+      margin: 0px auto;
+      /*position: relative;
+      top: 30px;*/
+}
+
+#nav li {
+	list-style-type: none;
+	float: left;
+}
+
+#nav a {
+	height: 38px;
+	display: block;
+}
+
+#nav span {display: none;}
+
+#list1 { width: 112px; }
+#list2 { width: 120px; }
+#list3 { width: 128px; }
+#list4 { width: 125px; }
+#list5 { width: 137px; }
+#list6 { width: 131px; }
+#list7 { width: 123px; }
+
+#list1 a:hover {
+      background: url(nav.png) 0px -38px no-repeat;
+}
+
+#list2 a:hover {
+      background: url(nav.png) -112px -38px no-repeat;
+}
+
+#list3 a:hover {
+      background: url(nav.png) -232px -38px no-repeat;
+}
+
+#list4 a:hover {
+      background: url(nav.png) -360px -38px no-repeat;
+}
+
+#list5 a:hover {
+      background: url(nav.png) -485px -38px no-repeat;
+}
+
+#list6 a:hover {
+      background: url(nav.png) -622px -38px no-repeat;
+}
+
+#list7 a:hover {
+      background: url(nav.png) -753px -38px no-repeat;
+}
+
