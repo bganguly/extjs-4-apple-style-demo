@@ -8,8 +8,7 @@ Ext.application({
             renderTo: Ext.getBody(),
             id:'myContainer',
             width: 920,
-            height: 700,
-            //layout:'fit',
+            height: 600,
             title: "<ul id='nav'><li id='list1'><a href='#'><span>Apple</span></a></li><li id='list2'><a href='#'><span>Store</span></a></li><li id='list3'><a href='#'><span>Mac</span></a></li><li id='list4'><a href='#'><span>iPod + iTunes</span></a></li><li id='list5'><a href='#'><span>iPhone</span></a></li><li id='list6'><a href='#'><span>Downloads</span></a></li><li id='list7'><a href='#'><span>Support</span></a></li></ul>",//'Container Panel',
             defaults: {
                 margin:'40 0 0 80'
@@ -32,7 +31,7 @@ Ext.application({
                     xtype: 'panel',
                     id:'myPanel1',
                     height: 300,
-                    width: '75%',
+                    width: 680,
                     dockedItems: [{
                         xtype: 'toolbar',
                         dock: 'top',
@@ -59,8 +58,22 @@ Ext.application({
                             	icon:'resources/images/green.png',
                             	listeners : {
                             	    click: function(btn, e, eOpts) {
-                            	    	Ext.getCmp('myPanel1').setWidth(Ext.getCmp('myContainer').getWidth());
-                           	    		Ext.getCmp('myBbar').show();
+                            	    	var eleMyPanel=Ext.get('myPanel1');
+                            	    	var cmpMyPanel=Ext.getCmp('myPanel1');
+
+                            	    	if (eleMyPanel.getStyle('margin')!=="0px") {
+                            	    		eleMyPanel.applyStyles({
+	                            	    		margin:"0px"
+	                            	    	});
+                            	    		cmpMyPanel.setWidth(Ext.getCmp('myContainer').getWidth());
+                            	    		cmpMyPanel.setHeight(Ext.getCmp('myContainer').getHeight());
+                            	    	} else {
+                            	    		eleMyPanel.applyStyles({
+	                            	    		margin:"40px 0px 0px 80px"
+	                            	    	});
+                            	    		cmpMyPanel.setWidth(680);
+                            	    		cmpMyPanel.setHeight(300);
+                            	    	}
                             	    }
                             	  }
                              }
