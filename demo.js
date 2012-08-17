@@ -1,4 +1,3 @@
-//Ext.require('Ext.container.Viewport');
 Ext.require('Ext.panel.Panel');
  
 Ext.application({
@@ -79,14 +78,12 @@ Ext.application({
                              }
                             ]
                     }],
-                    // Fields will be arranged vertically, stretched to full width
                     layout: 'anchor',
                     defaults: {
                         anchor: '50%',
                         margin:'20 0 0 40'
                     },
 
-                    // The fields
                     defaultType: 'textfield',
                     items: [{
                         fieldLabel: 'First Name',
@@ -97,29 +94,7 @@ Ext.application({
                         name: 'last',
                         allowBlank: false
                     }]
-                }/*,
-                {
-                    xtype: 'panel',
-                    title: 'Child Panel 2',
-                    height: 300,
-                    width: '75%',
-                    items: [{
-                        xtype: 'textarea',
-                        style: {
-                            width: '80%',
-                            margin: '5% 10% 5% 10% '
-                        }
-                    },
-                    	new Ext.button.Button({
-                        text: 'Send',
-                        minWidth: '100',
-                        style: {
-                            margin: '5% 10% 5% 10% '
-                        }
-                    })
-                    ]
-                }*/
-                
+                }
             ]
         });
     }
